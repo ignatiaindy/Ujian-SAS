@@ -18,7 +18,7 @@ https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022
 
 After downloading it, we need to create Windows Server virtual Machine
 
-![01_1](D:\ITTelkom IT\SAS\UTS\assets\01_1.PNG)
+![01_1](/assets/01_1.PNG)
 
 ![01_2_Windows_Server_VM](D:\ITTelkom IT\SAS\UTS\assets\01_2_Windows_Server_VM.PNG)
 
