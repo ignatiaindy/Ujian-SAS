@@ -12,13 +12,13 @@
 
 Scheme :
 
-![00_scheme](D:\ITTelkom IT\SAS\UAS\assets\00_scheme.png)
+![00_scheme](assets/00_scheme.png)
 
 ------
 
 Make new lxc and configure the IP of each lxc
 
-![01_0_sudo_lxc_ls](D:\ITTelkom IT\SAS\UAS\assets\01_0_sudo_lxc_ls.PNG)
+![01_0_sudo_lxc_ls](assets/01_0_sudo_lxc_ls.PNG)
 
 install open ssh server in all of the lxc above, after that we go to ansible
 
@@ -34,7 +34,7 @@ cd ~/ansible/TUBES
 
 And then go to 'nano hosts' to classified each lxc just like the scheme above
 
-![01_1_nano_hosts](D:\ITTelkom IT\SAS\UAS\assets\01_1_nano_hosts.PNG)
+![01_1_nano_hosts](assets/01_1_nano_hosts.PNG)
 
 And then
 
@@ -46,17 +46,17 @@ nano install-yii.yml //for yii2.0
 nano install-mariadb.yml //for phpmyadmin
 ```
 
-![01_2_tubes_ls](D:\ITTelkom IT\SAS\UAS\assets\01_2_tubes_ls.PNG)
+![01_2_tubes_ls](assets/01_2_tubes_ls.PNG)
 
-![01_3_install_ci_yml](D:\ITTelkom IT\SAS\UAS\assets\01_3_install_ci_yml.PNG)
+![01_3_install_ci_yml](assets/01_3_install_ci_yml.PNG)
 
-![01_4_install_laravel_yml](D:\ITTelkom IT\SAS\UAS\assets\01_4_install_laravel_yml.PNG)
+![01_4_install_laravel_yml](assets/01_4_install_laravel_yml.PNG)
 
-![01_5_install_wp_yml](D:\ITTelkom IT\SAS\UAS\assets\01_5_install_wp_yml.PNG)
+![01_5_install_wp_yml](assets/01_5_install_wp_yml.PNG)
 
-![01_6_install_yii_yml](D:\ITTelkom IT\SAS\UAS\assets\01_6_install_yii_yml.PNG)
+![01_6_install_yii_yml](assets/01_6_install_yii_yml.PNG)
 
-![01_7_install_mariadb_yml](D:\ITTelkom IT\SAS\UAS\assets\01_7_install_mariadb_yml.PNG)
+![01_7_install_mariadb_yml](assets/01_7_install_mariadb_yml.PNG)
 
 After all done we go to
 
@@ -65,13 +65,13 @@ cd /roles/ci/tasks
 nano main.yml
 ```
 
-![02_1_app_ci_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_1_app_ci_tasks_main_yml.PNG)
+![02_1_app_ci_tasks_main_yml](assets/02_1_app_ci_tasks_main_yml.PNG)
 
-![02_2_app_ci_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_2_app_ci_tasks_main_yml.PNG)
+![02_2_app_ci_tasks_main_yml](assets/02_2_app_ci_tasks_main_yml.PNG)
 
-![02_3_app_ci_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_3_app_ci_tasks_main_yml.PNG)
+![02_3_app_ci_tasks_main_yml](assets/02_3_app_ci_tasks_main_yml.PNG)
 
-![02_4_app_ci_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_4_app_ci_tasks_main_yml.PNG)
+![02_4_app_ci_tasks_main_yml](assets/02_4_app_ci_tasks_main_yml.PNG)
 
 After all done we go to
 
@@ -80,7 +80,7 @@ cd ../templates
 nano app.conf
 ```
 
-![02_5_app_ci_templates_app_conf](D:\ITTelkom IT\SAS\UAS\assets\02_5_app_ci_templates_app_conf.PNG)
+![02_5_app_ci_templates_app_conf](assets/02_5_app_ci_templates_app_conf.PNG)
 
 After all done we go to
 
@@ -89,7 +89,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_6_app_ci_handlers_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_6_app_ci_handlers_main_yml.PNG)
+![02_6_app_ci_handlers_main_yml](assets/02_6_app_ci_handlers_main_yml.PNG)
 
 The ansible for Code Igniter is done, the we go to
 
@@ -99,9 +99,9 @@ cd php/tasks
 nano main.yml
 ```
 
-![02_7_php_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_7_php_tasks_main_yml.PNG)
+![02_7_php_tasks_main_yml](assets/02_7_php_tasks_main_yml.PNG)
 
-![02_8_php_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_8_php_tasks_main_yml.PNG)
+![02_8_php_tasks_main_yml](assets/02_8_php_tasks_main_yml.PNG)
 
 Then go to
 
@@ -110,7 +110,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_9_php_handlers_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_9_php_handlers_main_yml.PNG)
+![02_9_php_handlers_main_yml](assets/02_9_php_handlers_main_yml.PNG)
 
 The ansible for php is done, next one is Laravel, we need to go to
 
@@ -120,11 +120,11 @@ cd lv/tasks
 nano main.yml
 ```
 
-![02_10_lv_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_10_lv_tasks_main_yml.PNG)
+![02_10_lv_tasks_main_yml](assets/02_10_lv_tasks_main_yml.PNG)
 
-![02_11_lv_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_11_lv_tasks_main_yml.PNG)
+![02_11_lv_tasks_main_yml](assets/02_11_lv_tasks_main_yml.PNG)
 
-![02_12_lv_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_12_lv_tasks_main_yml.PNG)
+![02_12_lv_tasks_main_yml](assets/02_12_lv_tasks_main_yml.PNG)
 
 After that we go to
 
@@ -133,9 +133,9 @@ cd ../templates
 nano env.template
 ```
 
-![02_13_lv_templates_env_template](D:\ITTelkom IT\SAS\UAS\assets\02_13_lv_templates_env_template.PNG)
+![02_13_lv_templates_env_template](assets/02_13_lv_templates_env_template.PNG)
 
-![02_14_lv_templates_env_template](D:\ITTelkom IT\SAS\UAS\assets\02_14_lv_templates_env_template.PNG)
+![02_14_lv_templates_env_template](assets/02_14_lv_templates_env_template.PNG)
 
 Then go to
 
@@ -143,7 +143,7 @@ Then go to
 nano lv.conf
 ```
 
-![02_15_lv_templates_lv_conf](D:\ITTelkom IT\SAS\UAS\assets\02_15_lv_templates_lv_conf.PNG)
+![02_15_lv_templates_lv_conf](assets/02_15_lv_templates_lv_conf.PNG)
 
 After configuring in templates, we go to handlers
 
@@ -152,7 +152,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_16_lv_handlers_main.yml](D:\ITTelkom IT\SAS\UAS\assets\02_16_lv_handlers_main.yml.PNG)
+![02_16_lv_handlers_main.yml](assets/02_16_lv_handlers_main.yml.PNG)
 
 The ansible for Laravel is done, the next one is mariadb, first we go to
 
@@ -162,7 +162,7 @@ cd db/tasks
 nano main.yml
 ```
 
-![02_17_db_tasks_main.yml](D:\ITTelkom IT\SAS\UAS\assets\02_17_db_tasks_main.yml.PNG)
+![02_17_db_tasks_main.yml](assets/02_17_db_tasks_main.yml.PNG)
 
 Then go to templates
 
@@ -171,7 +171,7 @@ cd ../templates
 nano my.cnf
 ```
 
-![02_18_db_templates_my_cnf](D:\ITTelkom IT\SAS\UAS\assets\02_18_db_templates_my_cnf.PNG)
+![02_18_db_templates_my_cnf](assets/02_18_db_templates_my_cnf.PNG)
 
 Next go to handlers
 
@@ -180,7 +180,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_19_db_handlers_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_19_db_handlers_main_yml.PNG)
+![02_19_db_handlers_main_yml](assets/02_19_db_handlers_main_yml.PNG)
 
 The ansible for database is done, the next one is for PHP My Admin, just like before we need to go to
 
@@ -190,11 +190,11 @@ cd pma/tasks
 nano main.yml
 ```
 
-![02_20_pma_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_20_pma_tasks_main_yml.PNG)
+![02_20_pma_tasks_main_yml](assets/02_20_pma_tasks_main_yml.PNG)
 
-![02_21_pma_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_21_pma_tasks_main_yml.PNG)
+![02_21_pma_tasks_main_yml](assets/02_21_pma_tasks_main_yml.PNG)
 
-![02_23_pma_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_23_pma_tasks_main_yml.PNG)
+![02_23_pma_tasks_main_yml](assets/02_23_pma_tasks_main_yml.PNG)
 
 Then go to
 
@@ -203,7 +203,7 @@ cd ../templates
 nano lxc_mariadb.conf
 ```
 
-![02_24_pma_templates_lxcmariadb_conf](D:\ITTelkom IT\SAS\UAS\assets\02_24_pma_templates_lxcmariadb_conf.PNG)
+![02_24_pma_templates_lxcmariadb_conf](assets/02_24_pma_templates_lxcmariadb_conf.PNG)
 
 Then go to handlers
 
@@ -212,7 +212,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_25_pma_handlers_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_25_pma_handlers_main_yml.PNG)
+![02_25_pma_handlers_main_yml](assets/02_25_pma_handlers_main_yml.PNG)
 
 Yay the ansible for PHP My Admin is done, next one is YII2.0
 
@@ -222,11 +222,11 @@ cd yii/tasks
 nano main.yml
 ```
 
-![02_26_yii_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_26_yii_tasks_main_yml.PNG)
+![02_26_yii_tasks_main_yml](assets/02_26_yii_tasks_main_yml.PNG)
 
-![02_27_yii_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_27_yii_tasks_main_yml.PNG)
+![02_27_yii_tasks_main_yml](assets/02_27_yii_tasks_main_yml.PNG)
 
-![02_28_yii_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_28_yii_tasks_main_yml.PNG)
+![02_28_yii_tasks_main_yml](assets/02_28_yii_tasks_main_yml.PNG)
 
 The next one we go to templates
 
@@ -235,9 +235,9 @@ cd ../templates
 nano yii.conf
 ```
 
-![02_29_yii_templates_yii_conf](D:\ITTelkom IT\SAS\UAS\assets\02_29_yii_templates_yii_conf.PNG)
+![02_29_yii_templates_yii_conf](assets/02_29_yii_templates_yii_conf.PNG)
 
-![02_30_yii_templates_yii_conf](D:\ITTelkom IT\SAS\UAS\assets\02_30_yii_templates_yii_conf.PNG)
+![02_30_yii_templates_yii_conf](assets/02_30_yii_templates_yii_conf.PNG)
 
 Then we go to handlers
 
@@ -246,7 +246,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_31_yii_handlers_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_31_yii_handlers_main_yml.PNG)
+![02_31_yii_handlers_main_yml](assets/02_31_yii_handlers_main_yml.PNG)
 
 The ansible for YII2.0 is done, so the next one is Wordpress
 
@@ -256,7 +256,7 @@ cd wp/tasks
 nano main.yml
 ```
 
-![02_32_wp_tasks_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_32_wp_tasks_main_yml.PNG)
+![02_32_wp_tasks_main_yml](assets/02_32_wp_tasks_main_yml.PNG)
 
 Then go to templates
 
@@ -265,7 +265,7 @@ cd ../templates
 nano wp.conf
 ```
 
-![02_33_wp_templates_wp_conf](D:\ITTelkom IT\SAS\UAS\assets\02_33_wp_templates_wp_conf.PNG)
+![02_33_wp_templates_wp_conf](assets/02_33_wp_templates_wp_conf.PNG)
 
 Then
 
@@ -273,7 +273,7 @@ Then
 nano wp.local
 ```
 
-![02_34_wp_templates_wp_local](D:\ITTelkom IT\SAS\UAS\assets\02_34_wp_templates_wp_local.PNG)
+![02_34_wp_templates_wp_local](assets/02_34_wp_templates_wp_local.PNG)
 
 Don't forget to go to handlers
 
@@ -282,7 +282,7 @@ cd ../handlers
 nano main.yml
 ```
 
-![02_35_wp_handlers_main_yml](D:\ITTelkom IT\SAS\UAS\assets\02_35_wp_handlers_main_yml.PNG)
+![02_35_wp_handlers_main_yml](assets/02_35_wp_handlers_main_yml.PNG)
 
 This is the configuration for vm.local
 
@@ -290,11 +290,11 @@ This is the configuration for vm.local
 sudo nano /etc/nginx/sites-available/vm.local
 ```
 
-![02_36_etc_sites_availabe_vmlocal](D:\ITTelkom IT\SAS\UAS\assets\02_36_etc_sites_availabe_vmlocal.PNG)
+![02_36_etc_sites_availabe_vmlocal](assets/02_36_etc_sites_availabe_vmlocal.PNG)
 
-![02_37_etc_sites_availabe_vmlocal](D:\ITTelkom IT\SAS\UAS\assets\02_37_etc_sites_availabe_vmlocal.PNG)
+![02_37_etc_sites_availabe_vmlocal](assets/02_37_etc_sites_availabe_vmlocal.PNG)
 
-![02_38_etc_sites_availabe_vmlocal](D:\ITTelkom IT\SAS\UAS\assets\02_38_etc_sites_availabe_vmlocal.PNG)
+![02_38_etc_sites_availabe_vmlocal](assets/02_38_etc_sites_availabe_vmlocal.PNG)
 
 This is the configuration for hosts in VM
 
@@ -302,9 +302,9 @@ This is the configuration for hosts in VM
 nano /etc/hosts
 ```
 
-![02_39_etc_hosts_vm](D:\ITTelkom IT\SAS\UAS\assets\02_39_etc_hosts_vm.PNG)
+![02_39_etc_hosts_vm](assets/02_39_etc_hosts_vm.PNG)
 
-![03_1_ansibleplaybook_pma_mariadb](D:\ITTelkom IT\SAS\UAS\assets\03_1_ansibleplaybook_pma_mariadb.PNG)
+![03_1_ansibleplaybook_pma_mariadb](assets/03_1_ansibleplaybook_pma_mariadb.PNG)
 
 After we add the ansible, then we run them using
 
@@ -314,57 +314,57 @@ ansible-playbook -i hosts install-''.yml -k
 
 The first one is mariadb
 
-![03_2_ansibleplaybook_pma_mariadb](D:\ITTelkom IT\SAS\UAS\assets\03_2_ansibleplaybook_pma_mariadb.PNG)
+![03_2_ansibleplaybook_pma_mariadb](assets/03_2_ansibleplaybook_pma_mariadb.PNG)
 
-![03_3_ansibleplaybook_pma_mariadb](D:\ITTelkom IT\SAS\UAS\assets\03_3_ansibleplaybook_pma_mariadb.PNG)
+![03_3_ansibleplaybook_pma_mariadb](assets/03_3_ansibleplaybook_pma_mariadb.PNG)
 
 Next is Laravel
 
-![03_4_ansibleplaybook_laravel](D:\ITTelkom IT\SAS\UAS\assets\03_4_ansibleplaybook_laravel.PNG)
+![03_4_ansibleplaybook_laravel](assets/03_4_ansibleplaybook_laravel.PNG)
 
-![03_5_ansibleplaybook_laravel](D:\ITTelkom IT\SAS\UAS\assets\03_5_ansibleplaybook_laravel.PNG)
+![03_5_ansibleplaybook_laravel](assets/03_5_ansibleplaybook_laravel.PNG)
 
 The next one is Code Igniter
 
-![03_8_ansibleplaybook_ci](D:\ITTelkom IT\SAS\UAS\assets\03_8_ansibleplaybook_ci.PNG)
+![03_8_ansibleplaybook_ci](assets/03_8_ansibleplaybook_ci.PNG)
 
-![03_9_ansibleplaybook_ci](D:\ITTelkom IT\SAS\UAS\assets\03_9_ansibleplaybook_ci.PNG)
+![03_9_ansibleplaybook_ci](assets/03_9_ansibleplaybook_ci.PNG)
 
 And then Wordpress
 
-![03_10_ansibleplaybook_wp](D:\ITTelkom IT\SAS\UAS\assets\03_10_ansibleplaybook_wp.PNG)
+![03_10_ansibleplaybook_wp](assets/03_10_ansibleplaybook_wp.PNG)
 
-![03_11_ansibleplaybook_wp](D:\ITTelkom IT\SAS\UAS\assets\03_11_ansibleplaybook_wp.PNG)
+![03_11_ansibleplaybook_wp](assets/03_11_ansibleplaybook_wp.PNG)
 
 Then YII2.0
 
-![03_12_ansibleplaybook_yii](D:\ITTelkom IT\SAS\UAS\assets\03_12_ansibleplaybook_yii.PNG)
+![03_12_ansibleplaybook_yii](assets/03_12_ansibleplaybook_yii.PNG)
 
-![03_13_ansibleplaybook_yii](D:\ITTelkom IT\SAS\UAS\assets\03_13_ansibleplaybook_yii.PNG)
+![03_13_ansibleplaybook_yii](assets/03_13_ansibleplaybook_yii.PNG)
 
 YAY
 
-![04_1_notepad_host](D:\ITTelkom IT\SAS\UAS\assets\04_1_notepad_host.PNG)
+![04_1_notepad_host](assets/04_1_notepad_host.PNG)
 
 The Result
 
-![04_2_kelompok06_fpsas_app_ci](D:\ITTelkom IT\SAS\UAS\assets\04_2_kelompok06_fpsas_app_ci.PNG)
+![04_2_kelompok06_fpsas_app_ci](assets/04_2_kelompok06_fpsas_app_ci.PNG)
 
-![04_3_kelompok06_fpsas_product_yii](D:\ITTelkom IT\SAS\UAS\assets\04_3_kelompok06_fpsas_product_yii.PNG)
+![04_3_kelompok06_fpsas_product_yii](assets/04_3_kelompok06_fpsas_product_yii.PNG)
 
-![04_4_news_kelompok06_fpsas_wp](D:\ITTelkom IT\SAS\UAS\assets\04_4_news_kelompok06_fpsas_wp.PNG)
+![04_4_news_kelompok06_fpsas_wp](assets/04_4_news_kelompok06_fpsas_wp.PNG)
 
-![04_5_news_kelompok06_fpsas_wp_sukese](D:\ITTelkom IT\SAS\UAS\assets\04_5_news_kelompok06_fpsas_wp_sukese.PNG)
+![04_5_news_kelompok06_fpsas_wp_sukese](assets/04_5_news_kelompok06_fpsas_wp_sukese.PNG)
 
-![04_6_news_kelompok06_fpsas_wp_masok](D:\ITTelkom IT\SAS\UAS\assets\04_6_news_kelompok06_fpsas_wp_masok.PNG)
+![04_6_news_kelompok06_fpsas_wp_masok](assets/04_6_news_kelompok06_fpsas_wp_masok.PNG)
 
-![04_7_news_kelompok06_fpsas_wp_helloworld](D:\ITTelkom IT\SAS\UAS\assets\04_7_news_kelompok06_fpsas_wp_helloworld.PNG)
+![04_7_news_kelompok06_fpsas_wp_helloworld](assets/04_7_news_kelompok06_fpsas_wp_helloworld.PNG)
 
-![04_8_kelompok06_fpsas_laravel](D:\ITTelkom IT\SAS\UAS\assets\04_8_kelompok06_fpsas_laravel.PNG)
+![04_8_kelompok06_fpsas_laravel](assets/04_8_kelompok06_fpsas_laravel.PNG)
 
-![04_9_kelompok06_fpsas_phpmyadmin](D:\ITTelkom IT\SAS\UAS\assets\04_9_kelompok06_fpsas_phpmyadmin.PNG)
+![04_9_kelompok06_fpsas_phpmyadmin](assets/04_9_kelompok06_fpsas_phpmyadmin.PNG)
 
-![04_10_kelompok06_fpsas_phpmyadmin](D:\ITTelkom IT\SAS\UAS\assets\04_10_kelompok06_fpsas_phpmyadmin.PNG)
+![04_10_kelompok06_fpsas_phpmyadmin](assets/04_10_kelompok06_fpsas_phpmyadmin.PNG)
 
 ------
 
@@ -379,7 +379,7 @@ Blog : 793
 App : 675
 Product : 347
 
-![05_1_jmeter_50_sumreport](D:\ITTelkom IT\SAS\UAS\assets\05_1_jmeter_50_sumreport.PNG)
+![05_1_jmeter_50_sumreport](assets/05_1_jmeter_50_sumreport.PNG)
 
 150
 
@@ -388,7 +388,7 @@ Blog : 524
 App : 407
 Product : 256
 
-![05_2_jmeter_150_sumreport](D:\ITTelkom IT\SAS\UAS\assets\05_2_jmeter_150_sumreport.PNG)
+![05_2_jmeter_150_sumreport](assets/05_2_jmeter_150_sumreport.PNG)
 
 300
 
@@ -397,7 +397,7 @@ Blog : 143
 App : 154
 Product : 171
 
-![05_3_jmeter_300_sumreport](D:\ITTelkom IT\SAS\UAS\assets\05_3_jmeter_300_sumreport.PNG)
+![05_3_jmeter_300_sumreport](assets/05_3_jmeter_300_sumreport.PNG)
 
 500
 
@@ -406,7 +406,7 @@ Blog : 154
 App : 181
 Product : 181
 
-![05_4_jmeter_500_sumreport](D:\ITTelkom IT\SAS\UAS\assets\05_4_jmeter_500_sumreport.PNG)
+![05_4_jmeter_500_sumreport](assets/05_4_jmeter_500_sumreport.PNG)
 
 Not using load balancer
 
@@ -417,7 +417,7 @@ Blog : 12
 App : 16
 Product : 18
 
-![05_5_jmeter_50_before](D:\ITTelkom IT\SAS\UAS\assets\05_5_jmeter_50_before.PNG)
+![05_5_jmeter_50_before](assets/05_5_jmeter_50_before.PNG)
 
 150
 
@@ -426,7 +426,7 @@ Blog : 11
 App : 12
 Product : 7
 
-![05_6_jmeter_150_before](D:\ITTelkom IT\SAS\UAS\assets\05_6_jmeter_150_before.PNG)
+![05_6_jmeter_150_before](assets/05_6_jmeter_150_before.PNG)
 
 300
 
@@ -435,7 +435,7 @@ Blog : 11
 App : 12
 Product : 7
 
-![05_7_jmeter_300_before](D:\ITTelkom IT\SAS\UAS\assets\05_7_jmeter_300_before.PNG)
+![05_7_jmeter_300_before](assets/05_7_jmeter_300_before.PNG)
 
 500
 
@@ -444,7 +444,7 @@ Blog : 15
 App : 15
 Product : 9
 
-![05_8_jmeter_500_before](D:\ITTelkom IT\SAS\UAS\assets\05_8_jmeter_500_before.PNG)
+![05_8_jmeter_500_before](assets/05_8_jmeter_500_before.PNG)
 
 ------
 
